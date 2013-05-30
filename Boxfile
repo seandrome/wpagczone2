@@ -1,0 +1,18 @@
+web1:
+  name: wp-web
+  php_upload_max_filesize: "8M"
+  php_max_execution_time: 60
+  php_max_input_time: 120
+  shared_writable_dirs:
+    - wp-content/uploads
+  after_build:
+    - "mv pagoda/wp-config.php wp-config.php"
+    - "rm -R pagoda"
+  
+  php_extensions:
+  - curl
+  - hash
+  
+db1:
+  name: wp-db
+  

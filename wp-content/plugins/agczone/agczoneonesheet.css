@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+#agczone-content{
+	width:100%;
+}
+.agczone-thumbnail{
+	width:50%;
+	float:left;
+	display:block;
+	padding:0px;
+}
+.agczone-thumbnail img{
+	padding:3px;
+	border:1px solid #ddd;
+}
+.agczone-details{
+	width:50%;
+	float:right;
+	display:block;
+	padding:0px;
+}
+.agczone-table{
+	width:100%;
+	float:right;
+	display:block;
+}
+.agczone-td, .agczone-details td{
+	padding:0px 5px;
+}
+.agczonelicense{
+	text-align:center;
+	font-size:6px;
+}
+.agczonelicense a{
+	color:transparent;
+}
