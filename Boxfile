@@ -110,9 +110,7 @@ web1:
   - yaml
   - ZendGuardLoader
   - zip
-zend_extensions:
-  - ioncube_loader
-  - xdebug
+
   
 db1:
   name: wp-db
