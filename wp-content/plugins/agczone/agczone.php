@@ -179,7 +179,7 @@ function AGCZoneContent()
 		$result .= '</table>' . "\n";
 		$result .= '</div><br/>' . "\n";
 		$result .= '<div style="clear:both"></div><br/>' . "\n";
-		$result .= '<p style="text-align:center">Go To Product</br><a href="http://www.amazon.'.$reg.'/gp/product/'.$xml[0]->ASIN.'/'.$tag.'" rel="nofollow" target="_blank"><img src="http://kloget-kloget.zz.mu/document/amazon.png" /></a></p>' . "\n";
+		$result .= '<p style="text-align:center"> <h2>Go To Product</h2></br><a href="http://www.amazon.'.$reg.'/gp/product/'.$xml[0]->ASIN.'/'.$tag.'" rel="nofollow" target="_blank"><img src="http://kloget-kloget.zz.mu/document/amazon.png" /></a></p>' . "\n";
                
                 $result .= '<h3>Description '.$xml[0]->ItemAttributes->Title.'</h3><br/>' . "\n"; 
 		$description = $xml[0]->EditorialReviews->EditorialReview->Content[0];
@@ -196,16 +196,7 @@ function AGCZoneContent()
 		return $result;
 	}
 }
-function AGCZoneSheet()
-{
-	$sheeturl = plugins_url('/agczoneonesheet2.css', __FILE__);
-	$moourl = plugins_url('/mootools2.js', __FILE__);
-	$lazyurl = plugins_url('/Lazy2.js', __FILE__);
-	echo '<link rel="stylesheet" media="all" href="'.$sheeturl.'" />' . "\n";
-	echo '<script type="text/javascript" src="'.$moourl.'"></script>' . "\n";
-	echo '<script type="text/javascript" src="'.$lazyurl.'"></script>' . "\n";
-}
-add_filter('wp_head', 'AGCZoneSheet');
+
 function AGCZoneLicense()
 {
 	$license = 'hBQCL';
