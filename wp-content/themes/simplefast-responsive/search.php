@@ -2,7 +2,6 @@
 <div style="clear: both"></div>
 <div id="container">
 <div id="contents">
-<?php echo AGCZoneContent(); ?>
 <?php echo spp(get_search_query());?>
 
 <?php get_template_part( 'loop' ); ?>	
