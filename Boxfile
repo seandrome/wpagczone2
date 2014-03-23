@@ -1,5 +1,5 @@
 web1:
-  name: wp-web
+  name: mywebsite_dont_delete_please
   php_upload_max_filesize: "8M"
   php_max_execution_time: 60
   php_max_input_time: 120
@@ -8,18 +8,5 @@ web1:
   after_build:
     - "mv pagoda/wp-config.php wp-config.php"
     - "rm -R pagoda"
-  
-  php_extensions:
-  - curl
-  - hash 
-  - mssql
-  - mysql
-  - mysqli 
-  - xml
-  - xmlreader
-  - xmlrpc
-
-  
 db1:
-  name: wp-db
-  
+  name: lite_database
